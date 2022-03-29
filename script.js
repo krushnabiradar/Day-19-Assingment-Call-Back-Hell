@@ -1,27 +1,30 @@
-timer = document.getElementById("container");
-
-setTimeout(() => {
-  timer.innerText = "10";
+const time = () => {
+  var a = document.getElementById("call_back");
   setTimeout(() => {
-    timer.innerText = "9";
+    a.innerHTML = "10";
     setTimeout(() => {
-      timer.innerText = "8";
+      a.innerHTML = "9";
       setTimeout(() => {
-        timer.innerText = "7";
+        a.innerHTML = "8";
         setTimeout(() => {
-          timer.innerText = "6";
+          a.innerHTML = "7";
           setTimeout(() => {
-            timer.innerText = "5";
+            a.innerHTML = "6";
             setTimeout(() => {
-              timer.innerText = "4";
+              a.innerHTML = "5";
               setTimeout(() => {
-                timer.innerText = "3";
+                a.innerHTML = "4";
                 setTimeout(() => {
-                  timer.innerText = "2";
+                  a.innerHTML = "3";
                   setTimeout(() => {
-                    timer.innerText = "1";
+                    a.innerHTML = "2";
                     setTimeout(() => {
-                      timer.innerText = "Happy Independence Day!";
+                      a.innerHTML = "1";
+                      setTimeout(() => {
+                        a.innerHTML = "Happy Independence Day";
+                        document.body.style =
+                          "background: linear-gradient(to bottom, rgba(242,157,75,1) 0%, rgba(255,255,255,1) 50%, rgba(62,133,39,1) 100%);";
+                      }, 1000);
                     }, 1000);
                   }, 1000);
                 }, 1000);
@@ -32,4 +35,5 @@ setTimeout(() => {
       }, 1000);
     }, 1000);
   }, 1000);
-}, 1000);
+};
+time();
